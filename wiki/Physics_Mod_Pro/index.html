@@ -341,13 +341,13 @@
   <script>
     function load_twikoo() {
         if (!document.querySelectorAll("#twikoo_container")[0]) return;
-        stellar.loadScript('https://vip.123pan.cn/1815631588/blog/blogcdn/wjsw-twikoo.js', {defer: true}).then(function () {
+        stellar.loadScript('https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js', {defer: true}).then(function () {
             const el = document.getElementById("twikoo_container");
             var path = el.getAttribute('comment_id');
             if (!path) {
                 path = decodeURI(window.location.pathname);
             }
-            twikoo.init(Object.assign({"js":"https://vip.123pan.cn/1815631588/blog/blogcdn/wjsw-twikoo.js","envId":"https://twikoo-api.wjsw.love/","path":"window.TWIKOO_MAGIC_PATH||window.location.pathname"}, {
+            twikoo.init(Object.assign({"js":"https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js","envId":"https://twikoo-api.wjsw.love/","path":"window.TWIKOO_MAGIC_PATH||window.location.pathname"}, {
                 el: '#twikoo_container',
                 path: path,
             }));
